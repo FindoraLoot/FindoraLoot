@@ -1,0 +1,68 @@
+.home-page {
+  .scope-home-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+    margin: 48px auto 20px;
+    text-align: center;
+    .title {
+      box-sizing: border-box;
+      padding: 15px 20px 0;
+      font-size: 80px;
+    }
+    .about {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 10px auto 30px;
+      padding: 0;
+      font-size: 22px;
+      li {
+        margin-right: 20px;
+        &:last-child {
+          margin-right: 0;
+        }
+        a {
+          color: white;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    .info {
+      color: #8e8e8e;
+      font-size: 22px;
+    }
+  }
+  .scope-home-dapp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+    margin: 0 auto;
+    .no-metacore {
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+      .text {
+        margin-right: 20px;
+      }
+    }
+    .self_btn {
+      padding: 0 40px;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .home-page {
+    box-sizing: border-box;
+    padding: 0 20px;
+    .scope-home-desc,
+    .scope-home-dapp {
+      width: 100%;
+    }
+  }
+}
