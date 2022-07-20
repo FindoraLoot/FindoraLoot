@@ -42,4 +42,4 @@ $ yarn build
 > assets are in **"/dist"**
 
 ### Demo
-
+https://delicate-centaur-a95ecc.netlify.app/
