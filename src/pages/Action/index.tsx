@@ -37,6 +37,10 @@ function Action() {
   }
 
   async function onClaimSubmit() {
+    if (chainId !== 2152) {
+      message.warning('Please connect to the Findora network to operate');
+      return;
+    }
     if (chainId !== 2153) {
       message.warning('Please connect to the Findora network to operate');
       return;

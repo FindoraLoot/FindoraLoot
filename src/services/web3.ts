@@ -13,6 +13,9 @@ const getContract = (address: string, ABI: any, options) => {
 
 const getLootContract = () => {
   const { chainId } = window['__LootAPP__'];
+  if (chainId === 2152) {
+    return getContract(Tokens.mainnet.lootAddress, LootABI, { gasLimit: '8000000' });
+  }
   if (chainId === 2153) {
     return getContract(Tokens.dev.lootAddress, LootABI, { gasLimit: '8000000' });
   }
